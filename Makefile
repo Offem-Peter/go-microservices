@@ -11,7 +11,7 @@ help:
 
 ## up: starts all containers in the background without forcing build
 .PHONY: up
-up:
+up: down
 	@echo "Starting Docker images..."
 	docker-compose up -d
 	@echo "Docker images started!"
