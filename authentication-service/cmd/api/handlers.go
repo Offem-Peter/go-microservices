@@ -33,7 +33,7 @@ func (app *Config) Authenticate(w http.ResponseWriter, r *http.Request) {
 	}
 
 	// log authentication
-	err = app.logRequest(w, "authentication", fmt.Sprintf("%s logged in", user.Email))
+	err = app.logRequest("authentication", fmt.Sprintf("%s logged in", user.Email))
 	if err != nil || !valid {
 		app.errorJSON(w, err)
 		return
@@ -51,7 +51,7 @@ func (app *Config) Authenticate(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-func (app *Config) logRequest(w http.ResponseWriter, name, data string) error {
+func (app *Config) logRequest(name, data string) error {
 	var entry struct {
 		Name string `json:"name"`
 		Data string `json:"data"`
