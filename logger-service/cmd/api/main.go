@@ -15,7 +15,7 @@ import (
 const (
 	webPort  = "80"
 	rpcPort  = "5001"
-	mongoURL = "mongodb://mongo:27017"
+	mongoURL = "mongodb://localhost:27017"
 	grpcPort = "50001"
 )
 
@@ -50,8 +50,8 @@ func main() {
 	}
 
 	// start web server
-	go app.serve()
-
+	log.Println("Starting logger service on port ", webPort)
+	app.serve()
 }
 
 func (app *Config) serve() {
