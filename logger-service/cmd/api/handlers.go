@@ -16,7 +16,7 @@ func (app *Config) WriteLog(w http.ResponseWriter, r *http.Request) {
 
 	var requestPayload JSONPayload
 
-	_ = app.readJSON(w, r, requestPayload)
+	_ = app.readJSON(w, r, &requestPayload)
 
 	//insert data
 	event := data.LogEntry{
