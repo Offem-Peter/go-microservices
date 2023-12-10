@@ -1,1 +1,6 @@
 /db-data/*
+
+/authentication-service/authApp
+/broker-service/brokerApp
+/logger-service/loggerApp
+/front-end/frontApp
