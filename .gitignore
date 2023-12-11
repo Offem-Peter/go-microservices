@@ -3,4 +3,5 @@
 /authentication-service/authApp
 /broker-service/brokerApp
 /logger-service/loggerApp
+/mail-service/mailApp
 /front-end/frontApp
