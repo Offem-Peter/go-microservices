@@ -2,6 +2,7 @@ go 1.21.3
 
 
 use (
+	./listener-service
 	./mail-service
 	./logger-service
 	./authentication-service
