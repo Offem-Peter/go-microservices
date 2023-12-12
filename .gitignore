@@ -4,4 +4,5 @@
 /broker-service/brokerApp
 /logger-service/loggerApp
 /mail-service/mailApp
+/listener-service/listenerApp
 /front-end/frontApp
