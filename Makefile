@@ -27,10 +27,6 @@ up_build: build_broker build_auth build_logger build_mail build_listener
 	docker-compose up --build -d
 	@echo "Docker images built and started!"
 
-## up_build_with_front: stops docker-compose (if running), builds all projects and starts docker compose
-.PHONY: up_build_with_front
-up_build_with_front: up_build build_front
-
 ## down: stop docker compose
 .PHONY: down
 down:
@@ -71,6 +67,13 @@ build_listener:
 build_auth:
 	@echo "Building auth binary..."
 	cd ./authentication-service && env GOOS=linux CGO_ENABLED=0 go build -o ${AUTH_BINARY} ./cmd/api
+	@echo "Done!"
+
+## build_front_linux: builds the fronet end binary for linux
+.PHONY: build_front_linux
+build_front_linux:
+	@echo "Building front end binary..."
+	cd ./front-end && env GOOS=linux CGO_ENABLED=0 go build -o frontEndLinux ./cmd/web
 	@echo "Done!"
 
 ## build_front: builds the frone end binary
