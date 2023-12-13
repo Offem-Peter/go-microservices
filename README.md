@@ -47,3 +47,19 @@ docker service update --image nesco/service-name:1.0.1 myapp_service-name
 ```
 docker service update --image nesco/service-name:1.0.0 myapp_service-name
 ```
+
+# Scale down / Remove
+
+```
+docker service scale myapp_service-name=0
+```
+
+```
+docker stack rm myapp
+```
+
+# To Entirely leave the Swarm
+
+```
+docker swarm leave
+```
