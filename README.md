@@ -61,5 +61,5 @@ docker stack rm myapp
 # To Entirely leave the Swarm
 
 ```
-docker swarm leave
+docker swarm leave --force
 ```

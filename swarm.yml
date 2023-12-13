@@ -91,7 +91,6 @@ services:
     image: 'postgres:14.2'
     ports:
       - '5432:5432'
-    restart: always
     deploy:
       mode: global
     environment:
