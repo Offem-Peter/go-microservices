@@ -11,7 +11,7 @@ import (
 	amqp "github.com/rabbitmq/amqp091-go"
 )
 
-const port = "80"
+const port = "8080"
 
 type Config struct {
 	Rabbit *amqp.Connection
