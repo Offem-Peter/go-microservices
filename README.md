@@ -63,3 +63,29 @@ docker stack rm myapp
 ```
 docker swarm leave --force
 ```
+
+
+--------------------------
+## Server config stuff
+
+adduser microservice
+
+usermod -aG sudo microservice
+
+ufw allow ssh
+
+ufw allow http
+
+ufw allow https
+
+ufw allow 2377/tcp
+
+ufw allow 7946/tcp
+
+ufw allow 7946/udp
+
+ufw allow 4789/udp
+
+ufw allow 8025/tcp
+
+ufw enable
