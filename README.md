@@ -101,3 +101,38 @@ ufw enable
 ```
 htop
 ```
+
+# kubernetes/Kube Commands
+
+```
+minikube start
+minikube start --nodes=2
+```
+
+```
+minikube stop
+```
+
+```
+minikube dashboard
+```
+
+```
+minikube status
+```
+
+```
+kubectl apply -f k8s
+```
+
+```
+kubectl get pods
+```
+
+```
+kubectl get svc
+```
+
+```
+kubectl get deployments
+```
