@@ -148,3 +148,7 @@ kubectl delete deployments broker-service mongo rabbitmq
 ```
 kubectl delete svc broker-service mongo rabbitmq
 ```
+
+```
+kubectl scale deployment logger-service --replicas=1
+```
