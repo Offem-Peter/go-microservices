@@ -64,8 +64,14 @@ docker stack rm myapp
 docker swarm leave --force
 ```
 
+# To see service logs
 
---------------------------
+```
+docker service logs -f myapp_service-name
+```
+
+---
+
 ## Server config stuff
 
 adduser microservice
@@ -89,3 +95,9 @@ ufw allow 4789/udp
 ufw allow 8025/tcp
 
 ufw enable
+
+# see process
+
+```
+htop
+```
