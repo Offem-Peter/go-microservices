@@ -130,9 +130,21 @@ kubectl get pods
 ```
 
 ```
+kubectl logs pods-name
+```
+
+```
 kubectl get svc
 ```
 
 ```
 kubectl get deployments
+```
+
+```
+kubectl delete deployments broker-service mongo rabbitmq
+```
+
+```
+kubectl delete svc broker-service mongo rabbitmq
 ```
